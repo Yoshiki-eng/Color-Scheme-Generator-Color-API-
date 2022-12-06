@@ -1,0 +1,40 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        
+        <!-- icon -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    </head>
+    <body>
+        <div class='container'>
+            <div class='title-container'>
+                <h1 id='title'>Color Scheme Generator</h1>
+                <button id='dark-mode-btn'><span class="material-symbols-outlined">settings_brightness</span></button>
+            </div>
+            
+            <form>
+                <input type='color' value='color' id='color-input'>
+                <select id='mode-input'>
+                    <option value="">--Please choose an option--</option>
+                    <option  value="monochrome">monochrome</option>
+                    <option value="monochrome-dark">monochrome-dark</option>
+                    <option value="monochrome-light">monochrome-light</option>
+                    <option value="analogic">analogic</option>
+                    <option value="complement">complement</option>
+                    <option value="analogic-complement">analogic-complement</option>
+                    <option value="triad">triad</option>
+                    <option value="quad">quad</option>
+                </select>
+                <button id='submit-btn'>Get Color Scheme</button>
+            </form>
+            <div id='color-container'>
+                <!-- Insert color scheme here -->
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
